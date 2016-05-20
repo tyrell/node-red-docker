@@ -9,8 +9,4 @@ A Docker image to run Node-RED
 - Port 1880 is forwarded from host to container.
 - Volume set to map hosts .node-red user directory into the containers .node-red user directory.
 
-`docker run -d -p 1880:1880 -v /Users/tyrell/.node-red:/root/.node-red tyrell/node-red-docker:x86-latest`
-
-
-
-
+`docker run -d -p 1880:1880 tyrell/node-red-docker:x86-latest`
