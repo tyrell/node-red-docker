@@ -12,13 +12,13 @@ A Docker container to run Node-RED
 `docker pull tyrell/node-red-docker:rpi-latest` 
 
 ## Build this container yourself
-`docker build -t tyrell/node-red-docker:x86-latest - < Dockerfile`
+`docker build -t tyrell/node-red-docker:rpi-latest - < Dockerfile`
 
 ## Run container
 
 - Port 1880 is forwarded from host to container.
 
-`docker run -d -p 1880:1880 tyrell/node-red-docker:x86-latest`
+`docker run -dti --privileged -p 1880:1880 tyrell/node-red-docker:rpi-latest`
 
 ## Use Node-RED
 
